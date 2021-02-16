@@ -11,5 +11,124 @@ https://github.com/devopsschool-demo-labs-projects/java-sonarqube-helloworld-src
 
 C:\tools\sonarqube\scanner\sonar-scanner-4.4.0.2170-windows\bin\sonar-scanner.bat
 
+=========================================================================================
+=========================================================================================
+What is Jenkins?
+------------------------------
+	CI tool
+	Dev in Java
+	Release
+		community	- Part of the session - FREE
+		enterprise
+		blue ocean
+		jenkins X
+	Based on the plugins concept
+		
+
+What is CI?
+	Continous Integration
+http://www.devopsschool.com/blog/top-10-continuous-integration-tool/
+
+Auto Build + Auto Test
+=======================
+	Imm feedback
+
+===========================SDLC=======================================
+PLAN -> Code -> CodeReview -> Build -> UT -> Pack -> Archive -> Deploy -> AT -> CodeCoverage
+							ALL PASSES - Go to Release
+							ONE failed - Repeat
+---------------------------------------------------------------------------------------------
+Jira -> Git  -> SonarQube  -> Maven -> Junit -> Jar -> Artifactory -> Ansible -> Selenium -> Jacoco
+
+Team -> Arch -> Dev -> QA -> Ops
+
+Process ----> 
+
+Integrate all 
+	Phases of SDLC
+	Tools 
+	Teams
+	Process
+		Continously with Imm feedback & automated way
+------------------------------------------------------------------------------------------------
+					Jenkins
+
+
+Other tool
+=========================
+Teamcity 
+Bamboo
+
+How jenkins Works??? Jenkins Architecture.
+========================================================
+http://www.devopsschool.com/blog/jenkins-architecture-explained/
+
+How to install it?
+=================================
+https://devopsschool.com/tutorial/jenkins/jenkins-installation-and-configuration.html
+
+
+http://65.0.131.107:8080/login?from=%2F
+rajesh
+devopsschool
+
+
+
+
+
+===================================================================
+===================================================================
+Q1. What is your tech?
+		JAVA			version		Installed in Agent?
+		DOTnet			version		Installed in Agent?
+		PYTHOn			version		Installed in Agent?
+
+Q2. Where is the Source Code?
+		git			userbranch = path - user - password - Tools is installed in Agent?
+		perforce		branch = path - user - password - Tools is installed in Agent?
+		tfs			branch = path - user - password - Tools is installed in Agent?
+		svn			branch = path - user - password - Tools is installed in Agent?
+		
+Q3. When you want this build to be triggers?
+		hourly
+
+Q4. What is your builder?
+	ant		which target?			- Tools is installed in Agent?	
+	maven		which goal?			- Tools is installed in Agent?
+	gradle		which task?			- Tools is installed in Agent?
+	msbuild		which target?			- Tools is installed in Agent?
+	bash		which script or commands	- Tools is installed in Agent?	
+	batch		which script or commands	- Tools is installed in Agent?
+Q5. Where you want to send Feedback?
+		Email.
+
+
+--------------------------------------
+Q1. What is your tech?
+		java
+
+Q2. Where is the Source Code?
+https://github.com/devops-school/helloworld-java-maven
+
+
+Q3. When you want this build to be triggers?
+		every 15mins.
+
+Q4. What is your builder?
+		maven - 
+			compile - compile
+			test - test
+			package - package			
+		        install - install
+https://www.youtube.com/thedevopsschool
+Q5. Where you want to send Feedback?
+		rajesh@devopsschool.com
+
+
+=========================================
+Lab 1 - Create a folder and Create a job with Maven
+
+Lab 2 - Create a another job using Ant
+https://github.com/scmgalaxy/helloworld-java-ant
 
 
