@@ -1,0 +1,15 @@
+http://65.0.131.107:9000/
+admin
+admin
+
+Example Code - https://github.com/SonarSource/sonar-scanning-examples
+- sonarqube-scanner
+
+Small code
+https://github.com/devopsschool-demo-labs-projects/java-sonarqube-helloworld-src
+
+
+C:\tools\sonarqube\scanner\sonar-scanner-4.4.0.2170-windows\bin\sonar-scanner.bat
+
+
+
