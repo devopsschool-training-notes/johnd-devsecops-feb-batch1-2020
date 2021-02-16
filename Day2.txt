@@ -132,3 +132,101 @@ Lab 2 - Create a another job using Ant
 https://github.com/scmgalaxy/helloworld-java-ant
 
 
+================================================================
+Jenkins
+
+		Scheduling
+		Integration
+		Feedback
+			Dashboard = Pipeline
+
+Scheduling
+======================================================================
+Trigger a Job @ certain time					=== Build periodically
+
+Trigger a Job @ certain time && if SCM changes are there	=== Poll SCM
+
+Trigger a Job when someone pushes into github
+https://www.devopsschool.com/blog/how-to-build-when-a-change-is-pushed-to-github-in-jenkins/
+
+Trigger a Job using Script/Api
+https://www.devopsschool.com/blog/jenkins-command-line-reference-for-login-and-trigger-a-job/
+
+curl -X POST --user rajesh:1168950c3bd8215332efb6ca35399a118d http://65.0.131.107:8080/job/RajeshK/job/compile/build?
+
+
+
+
+Trigger this job when another job is built	= Build after other projects are built
+
+Trigger another job after this Job		= 
+		Post Build Action => Build Other project
+==============================================================================
+Integration
+==========================
+Step 1 - Install plugins (SonarQube)
+Step 2 - Config plugins - Inform jenkins about SonarQube Server
+Step 3 - Config Scanner(Tools)
+Step 4 - Clone a code using job and run Scanner on the code.
+
+==========================================================
+Feedback
+===================================
+			Email
+				
+			Chat
+				Skype
+				Team
+				Whatsapp
+				Slack
+	
+			Dashboard == Pipeline
+			- Build Pipeline	- Using Existing Job
+
+			- Pipeline		- Code in Jenkinsfile
+
+node {
+   def mvnHome
+   stage('Preparation') { // for display purposes
+      // Get some code from a GitHub repository
+      git 'https://github.com/scmgalaxy/helloworld-java-maven'
+      // Get the Maven tool.
+      // ** NOTE: This 'M3' Maven tool must be configured
+      // **       in the global configuration.           
+      mvnHome = tool 'maven'
+   }
+   stage('Build') {
+      // Run the maven build
+      if (isUnix()) {
+         sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore clean compile"
+      } else {
+         bat(/"${mvnHome}\bin\mvn" -Dmaven.test.failure.ignore clean compile/)
+      }
+   }
+  stage('UT') {
+      // Run the maven build
+      if (isUnix()) {
+         sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore clean test"
+      } else {
+         bat(/"${mvnHome}\bin\mvn" -Dmaven.test.failure.ignore clean test/)
+      }
+   }
+     stage('Pack') {
+      // Run the maven build
+      if (isUnix()) {
+         sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore clean package"
+      } else {
+         bat(/"${mvnHome}\bin\mvn" -Dmaven.test.failure.ignore clean package/)
+      }
+   }
+   stage('Results') {
+      junit '**/target/surefire-reports/TEST-*.xml'
+      archive 'target/*.jar'
+   }
+}
+
+
+
+
+
+
