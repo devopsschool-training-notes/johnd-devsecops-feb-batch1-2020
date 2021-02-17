@@ -1,0 +1,87 @@
+13.127.11.29
+13.126.6.70		JEN
+=================================
+
+http://13.126.6.70:8080/
+rajesh
+devopsschool
+======================================
+
+I need to wait for my feedback? -
+I am waiting for  this?
+     ------- 
+Dependency
+----------
+
+Job history
+--------------
+https://www.devopsschool.com/tutorial/jenkins/jenkins-plugins.html
+=======================================
+Bash - Ansible - terraform 
+https://www.youtube.com/channel/UCrXr49kBvXJeQMMl2693c4g
+============================================================
+- Agent
+		Windows
+		Linux
+				Pre - java --- remoting.jar
+				ssh - ip - user - pass|key
+- CD	
+	- IIS
+------------------------------------------------------------
+13.127.11.29
+centos
+/tmp/jenkins
+
+
+CD
+==============================
+continuous delivery		= YES
+continuous deployment
+	Deploy?
+		
+	Prod Testing
+
+https://devopsschool.com/path/
+
+======================================================================
+Code 
+	which includes what to test
+Selenium
+	jar
+Web driver - 
+	executables
+Browsers
+	CHROME
+	FireFox
+
+
+
+
+Selenium Webdriver
+===============================
+Step 1 - Convert Selenese to Java Code 				DONE
+Step 2 - Load your Selenium lib into PATH and JAVA.		Using -cp
+Step 3 - Download Webdriver & set in the path			DONE 
+Step 4 - Run a Javafile and see the test results.
+
+javac -cp C:\tools\selenium\clients\selenium-java-3.141.59\libs\* example1.java
+java -cp "C:\tools\selenium\clients\selenium-java-3.141.59\libs\*;" example1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
