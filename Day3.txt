@@ -68,6 +68,14 @@ javac -cp C:\tools\selenium\clients\selenium-java-3.141.59\libs\* example1.java
 java -cp "C:\tools\selenium\clients\selenium-java-3.141.59\libs\*;" example1
 
 
+http://www.devopstrainer.in/
+http://www.devopstrainer.in/index.html
+
+
+
+Lab - 
+https://www.guru99.com/jmeter-performance-testing.html
+http://rajeshkumar.xyz/
 
 
 
