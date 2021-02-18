@@ -1,0 +1,36 @@
+What is CodeCoverage?
+===========================
+	Coverage of Code
+	Coverage % of the Code
+
+What is TestCoverage?
+===========================
+
+How this works!!!
+
+Tools
+	Java
+		Jacoco
+		Cobertura
+	Python
+		Coverage.py
+	Dotnet
+		Ncover
+==================================
+Jacoco
+	CodeCoverage tool
+	Written in Java
+	Free 
+	Open Souce
+	Dynamic Instrumentation by Jacoco
+		offline Instrumentation by Cobertura
+=============================================
+https://github.com/devopsschool-demo-labs-projects/jacoco-maven-unittestv2
+- java 8
+- maven 
+- mvn test
+
+https://www.jacoco.org/jacoco/trunk/doc/cli.html
+https://www.eclemma.org/userdoc/launching.html
+
+
